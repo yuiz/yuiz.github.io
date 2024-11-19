@@ -38,7 +38,7 @@ export default function ExternalLinks() {
                 {
                     linkItems.map(i => (
                         <div className="link_item" key={uuidv4()}>
-                            <a href={i.link} target="_blank" className={"link_item_clickable"}>
+                            <a href={i.link} target="_blank" className={"custom_link"}>
                                 <FontAwesomeIcon icon={i.icon}/>
                             </a>
                         </div>))

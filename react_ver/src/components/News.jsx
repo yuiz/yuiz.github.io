@@ -4,11 +4,11 @@ export default function News() {
     const newsItems = [
         {
             "date": "July-2023",
-            "desc": "Intern at MSRA",
+            "desc": "Back to Beijing",
         },
         {
-            "date": "Oct-2024",
-            "desc": "A paper submitted to CSCW'25 Revision",
+            "date": "Dec-2023",
+            "desc": "Back to Hong Kong",
         },
     ]
 
@@ -18,10 +18,10 @@ export default function News() {
                 {
                     newsItems.reverse().map(i =>
                         <div className={"news_item"} key={uuidv4()} >
-                            <p>
+                            <div className={"news_text"}>
                                 <span className={"news_date"}>{i.date}</span>
                                 {i.desc}
-                            </p>
+                            </div>
                         </div>
                     )
                 }

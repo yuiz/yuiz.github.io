@@ -1,5 +1,3 @@
-import "../css/syle.css";
-
 import Header from "./Header.jsx";
 import Bio from "./Bio.jsx";
 import Showcase from "./Showcase.jsx";
@@ -19,7 +17,7 @@ export default function Main() {
 
                 <div className={"secondary_panel"}>
                     <div className={"bio_frame"}>
-                        <img src={"/react.svg"} alt="" />
+                        <img src={"/selfie.jpg"} alt="" />
                     </div>
                     <ExternalLinks/>
                     <NewsList/>

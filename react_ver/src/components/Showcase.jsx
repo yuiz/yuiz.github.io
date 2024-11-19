@@ -8,17 +8,22 @@ export default function Showcase() {
     const selected = [
         {
             "title": "Understanding Communication Strategies and Viewer Engagement with Science Knowledge Videos on Bilibili",
-            "authors": ["Yu Zhang", "Changyang He", "Huanchen Wang", "Zhicong Lu"],
-            "conf": "2023 CHI Conference on Human Factors in Computing Systems",
+            "authors": "Yu Zhang,Changyang He,Huanchen Wang,Zhicong Lu",
+            "desc": "Content analysis of science knowledge videos on Bilibili, revealing the correlations between communication strategies and user engagement.",
+            "conf": "2023 CHI Conference on Human Factors in Computing Systems (CHI'23)",
             "imageUrl": "/bilisci.png",
-            "links": {"ACM Digital Lib": "https://dl.acm.org/doi/full/10.1145/3544548.3581476"}
+            "links": {
+                "ACM DL": "https://dl.acm.org/doi/full/10.1145/3544548.3581476",
+                // "PDF": ""
+            }
         },
         {
             "title": "Controlling a Car Through OBD Injection",
-            "authors": ["Yu Zhang", "Binbin Ge", "Xiang Li", "Bin Shi", "Bo Li"],
-            "conf": "2016 IEEE 3rd International Conference on Cyber Security and Cloud Computing",
+            "authors": "Yu Zhang,Binbin Ge,Xiang Li,Bin Shi,Bo Li",
+            "desc": "Investigation of the cyber security risks and vulnerability of controller area network (CAN) bus of small vehicles.",
+            "conf": "2016 IEEE 3rd International Conference on Cyber Security and Cloud Computing (CSCloud 2016)",
             "imageUrl": "/can_injection.png",
-            "links": {"IEEExplore": "https://ieeexplore.ieee.org/abstract/document/7545891/"}
+            "links": {"IEEE Xplore": "https://ieeexplore.ieee.org/abstract/document/7545891/"}
         }
     ]
 
@@ -73,34 +78,8 @@ export default function Showcase() {
                     Selected Research
                 </div>
                 {
-                    selected.map(d => <ResearchItem
-                        key={uuidv4()}
-                        title={d.title}
-                        authors={d.authors}
-                        conf={d.conf}
-                        imageUrl={d.imageUrl}
-                        links={d.links}
-                    />)
+                    selected.map(d => <ResearchItem key={uuidv4()} data={d}/>)
                 }
-
-                {/*<div className={"showcase_header"}>*/}
-                {/*    Collaborative Research*/}
-                {/*</div>*/}
-                {/*{*/}
-                {/*    collaboratives.map(d => <ResearchItem*/}
-                {/*        key={uuidv4()}*/}
-                {/*        title={d.title}*/}
-                {/*        authors={d.authors}*/}
-                {/*        conf={d.conf}*/}
-                {/*        imageUrl={d.imageUrl}*/}
-                {/*        links={d.links}*/}
-                {/*    />)*/}
-                {/*}*/}
-
-                <div className={"showcase_header"}>
-                    In Progress
-                </div>
-                { present.map(p => <PresentItem key={uuidv4()} data={p} />) }
             </div>
         </>
     );
