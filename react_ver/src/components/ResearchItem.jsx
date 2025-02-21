@@ -39,9 +39,9 @@ export default function ResearchItem({data}) {
                     <div className="item_conf">
                         {conf}
                     </div>
-                    <div className="item_desc">
-                        {desc}
-                    </div>
+                    {/*<div className="item_desc">*/}
+                    {/*    {desc}*/}
+                    {/*</div>*/}
 
                     <div className="item_link_container">
                         {

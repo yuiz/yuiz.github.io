@@ -7,6 +7,17 @@ import PresentItem from "./PresentItem.jsx";
 export default function Showcase() {
     const selected = [
         {
+            "title": "SpeechCap: Leveraging Playful Impact Captions to Facilitate Interpersonal Communication in Social Virtual Reality",
+            "authors": "Yu Zhang,Yi Wen,Siying Hu,Zhicong Lu",
+            "desc": "Introduced a speech-driven captioning mechanism with unique visual and interaction design to facilitate interpersonal communication in social VR.",
+            "conf": "The 28th ACM SIGCHI Conference on Computer-Supported Cooperative Work & Social Computing (CSCW'25)",
+            "imageUrl": "/bilisci.png",
+            "links": {
+                "ACM DL": "https://dl.acm.org/doi/full/10.1145/3544548.3581476",
+                // "PDF": ""
+            }
+        },
+        {
             "title": "Understanding Communication Strategies and Viewer Engagement with Science Knowledge Videos on Bilibili",
             "authors": "Yu Zhang,Changyang He,Huanchen Wang,Zhicong Lu",
             "desc": "Content analysis of science knowledge videos on Bilibili, revealing the correlations between communication strategies and user engagement.",
@@ -28,12 +39,7 @@ export default function Showcase() {
     ]
 
     const present = [
-        {
-            "title": "SpeechCap: Leveraging Playful Impact Captions to Facilitate Interpersonal Communication in Social Virtual Reality",
-            "desc": "Introduced a speech-driven captioning mechanism with unique visual and interaction design to facilitate interpersonal communication in social VR.",
-            "note": "As the 1st author. CSCW’25 in revision.",
-            "imageUrl": null,
-        },
+
         {
             "title": "SciMic: Scaffolding Science Storytelling through Human-AI Co-Creation of Comics",
             "desc": "Using large language models and generative AI to scaffold science storytelling and comic creation for based on given academic paper.",

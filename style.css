@@ -1,0 +1,176 @@
+/* Section Hidden Control */
+#sec_bio {
+    /*display: none;*/
+}
+
+#sec_news {
+    /*display: none;*/
+}
+
+#sec_publications {
+    /*display: none;*/
+}
+
+/* Main */
+.main_area {
+    background: #fafafa;
+}
+
+.main_title {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main_title_link_group {
+    display: flex;
+    padding-top: 20px;
+    gap:10px;
+}
+
+.main_title_link_group a {
+    font-size: 16px;
+    color: #121F27;
+}
+
+.main_title_link_group a:hover {
+    color: dodgerblue;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.section_title {
+    border-bottom: 1px solid gray;
+    margin-bottom: 10px;
+}
+
+.custom_footer {
+    border-top: 1px solid lightgray;
+    padding-top: 10px;
+}
+
+.custom_footer_message {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+.bio_content {
+    font-size: 15px;
+    padding-left: 24px;
+}
+
+/* Links under Avatar */
+.link_under_avatar {
+    display: flex;
+    justify-content: space-around;
+}
+
+.link_icon {
+    color: #121F27;
+    font-size: 20px;
+}
+
+.link_icon:hover {
+    color: dodgerblue;
+}
+
+/* News */
+.news_container {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding-left: 24px;
+}
+
+.news_item {
+    display: flex;
+}
+
+.news_date {
+    background: #121F27;
+    color: white;
+    padding: 0 4px 0 4px;
+    font-weight: bold;
+    font-size: 12px;
+    border-radius: 4px;
+    margin-right: 4px;
+    width: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Publications */
+.paper_container {
+    padding-left: 6px;
+}
+
+.paper_item {
+    margin-top: 12px;
+}
+
+.paper_title {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.paper_divider {
+    padding-left: 14px;
+    font-size: 22px;
+    color: darkgrey;
+    margin-top: 12px;
+    /*border-bottom: 1px solid blue;*/
+}
+
+.paper_img {
+    width: 100%;
+}
+
+.paper_teaser {
+    width: 100%;
+    margin-top: 2px;
+    margin-bottom: 6px;
+    border: dashed 1px darkgrey;
+    cursor: pointer;
+}
+
+.paper_link_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+}
+
+.paper_link_container a {
+    text-decoration: none;
+}
+
+.paper_link {
+    color: white;
+    border-radius: 4px;
+    padding: 2px 5px 2px 5px;
+    font-size: 12px;
+    font-family: "Roboto Thin", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: bold;
+}
+
+.paper_link:hover {
+    background: dodgerblue;
+}
+
+.acmdl {
+    background: #121F27;
+}
+
+.arxiv {
+    background: darkgreen;
+}
+
+.ieee {
+    background: #006699;
+}
+
+.pdf {
+    background: #cf0000;
+}
+
+

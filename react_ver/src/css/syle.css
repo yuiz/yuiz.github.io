@@ -13,8 +13,8 @@
     position: absolute;
     top: 60px;
     font-family: "Roboto Light", sans-serif;
-    left: 18%;
-    width: 64%;
+    left: 24%;
+    width: 52%;
     display: flex;
 }
 
@@ -211,4 +211,10 @@
 .news_text {
     font-size: 14px;
     margin-top: 2px;
+}
+
+
+/* Trail */
+.trail {
+
 }
