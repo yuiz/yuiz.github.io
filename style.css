@@ -55,7 +55,8 @@
 }
 
 .bio_content {
-    font-size: 15px;
+    font-size: 16px;
+    padding-top: 6px;
     padding-left: 24px;
 }
 
@@ -100,6 +101,10 @@
     align-items: center;
 }
 
+.news_text {
+    font-size: 16px;
+}
+
 /* Publications */
 .paper_container {
     padding-left: 6px;
@@ -110,8 +115,12 @@
 }
 
 .paper_title {
-    font-size: 16px;
+    font-size: 18px;
     font-weight: bold;
+}
+
+.paper_text {
+    font-size: 16px;
 }
 
 .paper_divider {
