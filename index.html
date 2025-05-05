@@ -35,12 +35,11 @@
         </div>
         <div id="sec_bio" class="row">
             <div class="col-sm-8 col-md-9 col-lg-9 bio_content">
-                <p>
+                <div class="">
+                    <p>
                     Hi there!
-                    I am <span style="font-weight: bold;">Yu Zhang (张宇)</span>, a Ph.D. candidate at the Department of
+                    I am Yu Zhang (张宇), a Ph.D. candidate at the Department of
                     Computer Science, City University of Hong Kong.
-                </p>
-                <p>
                     My research interests focus on the intersection of human-computer interaction (HCI), mixed reality (MR),
                     social computing and science communication.
                     I am currently supervised by
@@ -52,17 +51,46 @@
                     </a>. Besides, I am also advised by
                     <a href="https://www.microsoft.com/en-us/research/people/wangyun/" target="_blank">
                         Dr. Yun Wang
-                    </a> from Microsoft Research Asia (MSRA).
+                    </a> from Microsoft Research Asia.
                 </p>
-                <p>
+                    <p>
                     Previously, I received a master's degree in data science and professional computing at The
                     Australian National University, and a bachelor's degree in computer science and technology at
                     Beihang University (BUAA),
                     Before starting Ph.D. programme, I used to be a full-stack software engineer at Thoughtworks.
                 </p>
+                </div>
+                <div class="row news_container">
+                    <h4>Latest News</h4>
+                    <div class="news_item">
+                        <div class="news_date">
+                            Apr. 2025
+                        </div>
+                        <div class="news_text">
+                            Attending CHI'25 at Yokohama, Japan
+                        </div>
+                    </div>
+                    <div class="news_item">
+                        <div class="news_date">
+                            Apr. 2025
+                        </div>
+                        <div class="news_text">
+                            One paper (SpeechCap) accepted by CSCW'25
+                        </div>
+                    </div>
+                    <div class="news_item">
+                        <div class="news_date">
+                            Feb. 2025
+                        </div>
+                        <div class="news_text">
+                            One paper (RevTogether) accepted by CHI'25 LBW
+                        </div>
+                    </div>
+                </div>
             </div>
+
             <div class="col-sm-4 col-md-3 col-lg-3">
-                <div class="thumbnail">
+                <div class="thumbnail avatar">
                     <img src="img/self.png" alt="portrait"/>
                 </div>
                 <div class="link_under_avatar">
@@ -95,54 +123,14 @@
             </div>
         </div>
 
-        <div id="sec_news">
-            <div class="section_title">
-                <h3>News</h3>
-            </div>
-            <div class="news_container">
-                <div class="row news_item">
-                    <div class="news_date">
-                        Feb. 2025
-                    </div>
-                    <div class="news_text">
-                        One paper accepted by CSCW '25
-                    </div>
-                </div>
-                <div class="row news_item">
-                    <div class="news_date">
-                        Jan. 2025
-                    </div>
-                    <div class="news_text">
-                        One paper submitted to CHI '25 LBW
-                    </div>
-                </div>
-                <div class="row news_item">
-                    <div class="news_date">
-                        Oct. 2024
-                    </div>
-                    <div class="news_text">
-                        One paper revised and re-submitted to CSCW '25
-                    </div>
-                </div>
-                <div class="row news_item">
-                    <div class="news_date">
-                        Sep. 2024
-                    </div>
-                    <div class="news_text">
-                        One paper submitted to CHI '25
-                    </div>
-                </div>
-            </div>
-        </div>
-
         <div id="sec_publications">
             <div class="section_title">
-                <h3>Publications</h3>
+                <h3>Selected Publications</h3>
             </div>
 
             <div class="paper_container">
                 <div class="row paper_item">
-                    <div class="col-sm-10 col-md-11 col-lg-11">
+                    <div class="col-sm-12 col-md-10 col-lg-8">
                         <div class="paper_title">
                             SpeechCap: Leveraging Playful Impact Captions to Facilitate Interpersonal Communication in Social Virtual Reality
                         </div>
@@ -152,22 +140,20 @@
                         <div class="paper_text">
                             The 28th ACM Conference on Computer-Supported Cooperative Work & Social Computing (CSCW'25)
                         </div>
-                    </div>
-                    <div class="col-sm-2 col-md-1 col-lg-1 paper_link_container2">
-                        <div>
-                            <a href="https://arxiv.org/abs/2502.10736" target="_blank">
-                                <span class="paper_link arxiv">Arxiv</span>
-                            </a>
+                        <div class="paper_links">
+                            <div>
+                                <a href="https://arxiv.org/abs/2502.10736" target="_blank">
+                                    <span class="paper_link arxiv">Arxiv</span>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="./pdf/cscw25_speechcap.pdf" target="_blank">
+                                    <span class="paper_link pdf">PDF</span>
+                                </a>
+                            </div>
                         </div>
-                        <div>
-                            <a href="./pdf/cscw25_speechcap.pdf" target="_blank">
-                                <span class="paper_link pdf">PDF</span>
-                            </a>
-                        </div>
                     </div>
-                </div>
-                <div class="row paper_img">
-                    <div class="col-sm-12 col-md-10 col-lg-10">
+                    <div class="col-sm-12 col-md-10 col-lg-4 paper_img2">
                         <img src="./img/speechcap.png"
                              title="The figure shows a user is throwing an impact caption towards another user for making fun of his birthday party in virtual reality."
                              alt="The figure shows a user is throwing an impact caption towards another user for making fun of his birthday party in virtual reality."
@@ -177,7 +163,40 @@
                 </div>
 
                 <div class="row paper_item">
-                    <div class="col-sm-10 col-md-11 col-lg-11">
+                    <div class="col-sm-12 col-md-10 col-lg-8">
+                        <div class="paper_title">
+                            RevTogether: Supporting Science Story Revision with Multiple AI Agents
+                        </div>
+                        <div class="paper_text">
+                            <span style="font-weight: bold;">Yu Zhang</span>, Kexue Fu, Zhicong Lu
+                        </div>
+                        <div class="paper_text">
+                            In Proceedings of the 2025 CHI Conference on Human Factors in Computing Systems (CHI EA'25)
+                        </div>
+                        <div class="paper_links">
+                            <div>
+                                <a href="https://dl.acm.org/doi/abs/" target="_blank">
+                                    <span class="paper_link acmdl">ACM</span>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="./" target="_blank">
+                                    <span class="paper_link arxiv">Arxiv</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-10 col-lg-4 paper_img2">
+                        <img src="./img/bilisci.png"
+                             title="The figure demonstrates the study procedures of how researchers understand the communication strategies and viewer engagements of science knowledge videos on Bilibili."
+                             alt="The figure demonstrates the study procedures of how researchers understand the communication strategies and viewer engagements of science knowledge videos on Bilibili."
+                             class="paper_teaser"
+                        />
+                    </div>
+                </div>
+
+                <div class="row paper_item">
+                    <div class="col-sm-12 col-md-10 col-lg-8">
                         <div class="paper_title">
                             Understanding Communication Strategies and Viewer Engagement with Science Knowledge Videos on Bilibili
                         </div>
@@ -187,22 +206,20 @@
                         <div class="paper_text">
                             In Proceedings of the 2023 CHI Conference on Human Factors in Computing Systems (CHI'23)
                         </div>
-                    </div>
-                    <div class="col-sm-2 col-md-1 col-lg-1 paper_link_container2">
-                        <div>
-                            <a href="https://dl.acm.org/doi/abs/10.1145/3544548.3581476" target="_blank">
-                                <span class="paper_link acmdl">ACM</span>
-                            </a>
+                        <div class="paper_links">
+                            <div>
+                                <a href="https://dl.acm.org/doi/abs/10.1145/3544548.3581476" target="_blank">
+                                    <span class="paper_link acmdl">ACM</span>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="./pdf/chi23_bilisci.pdf" target="_blank">
+                                    <span class="paper_link pdf">PDF</span>
+                                </a>
+                            </div>
                         </div>
-                        <div>
-                            <a href="./pdf/chi23_bilisci.pdf" target="_blank">
-                                <span class="paper_link pdf">PDF</span>
-                            </a>
-                        </div>
                     </div>
-                </div>
-                <div class="row paper_img">
-                    <div class="col-sm-12 col-md-10 col-lg-10">
+                    <div class="col-sm-12 col-md-10 col-lg-4 paper_img2">
                         <img src="./img/bilisci.png"
                              title="The figure demonstrates the study procedures of how researchers understand the communication strategies and viewer engagements of science knowledge videos on Bilibili."
                              alt="The figure demonstrates the study procedures of how researchers understand the communication strategies and viewer engagements of science knowledge videos on Bilibili."
@@ -211,82 +228,83 @@
                     </div>
                 </div>
 
-                <div class="row paper_divider">
-                    Co-authoring
-                </div>
 
-                <div class="row paper_item">
-                    <div class="col-sm-10 col-md-11 col-lg-11">
-                        <div class="paper_title">
-                            DanModCap: Designing a Danmaku Moderation Tool for Video-Sharing Platforms that Leverages Impact Captions
-                        </div>
-                        <div class="paper_text">
-                            Siying Hu, Huanchen Wang, <span style="font-weight: bold;">Yu Zhang</span>, Piaohong Wang, Zhicong Lu
-                        </div>
-                        <div class="paper_text">
-                            The 28th ACM Conference on Computer-Supported Cooperative Work & Social Computing (CSCW'25)
-                        </div>
-                    </div>
-                    <div class="col-sm-2 col-md-1 col-lg-1 paper_link_container">
-                        <div>
-                            <a href="https://arxiv.org/abs/2408.02574" target="_blank">
-                                <span class="paper_link arxiv">Arxiv</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
+<!--                <div class="row paper_divider">-->
+<!--                    Co-authoring-->
+<!--                </div>-->
 
-                <div class="row paper_item">
-                    <div class="col-sm-10 col-md-11 col-lg-11">
-                        <div class="paper_title">
-                            Engage Wider Audience or Facilitate Quality Answers? a Mixed-methods Analysis of Questioning Strategies for Research Sensemaking on a Community Q&A Site
-                        </div>
-                        <div class="paper_text">
-                            Changyang He, Yue Deng, Lu He, Qingyu Guo, <span style="font-weight: bold;">Yu Zhang</span>, Zhicong Lu, Bo Li
-                        </div>
-                        <div class="paper_text">
-                            The 27th ACM Conference on Computer-Supported Cooperative Work & Social Computing (CSCW'24)
-                        </div>
-                    </div>
-                    <div class="col-sm-2 col-md-1 col-lg-1 paper_link_container">
-                        <div>
-                            <a href="https://dl.acm.org/doi/abs/10.1145/3637327" target="_blank">
-                                <span class="paper_link acmdl">ACM</span>
-                            </a>
-                        </div>
-                        <div>
-                            <a href="https://arxiv.org/abs/2311.10975" target="_blank">
-                                <span class="paper_link arxiv">Arxiv</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
+<!--                <div class="row paper_item">-->
+<!--                    <div class="col-sm-10 col-md-11 col-lg-11">-->
+<!--                        <div class="paper_title">-->
+<!--                            DanModCap: Designing a Danmaku Moderation Tool for Video-Sharing Platforms that Leverages Impact Captions-->
+<!--                        </div>-->
+<!--                        <div class="paper_text">-->
+<!--                            Siying Hu, Huanchen Wang, <span style="font-weight: bold;">Yu Zhang</span>, Piaohong Wang, Zhicong Lu-->
+<!--                        </div>-->
+<!--                        <div class="paper_text">-->
+<!--                            The 28th ACM Conference on Computer-Supported Cooperative Work & Social Computing (CSCW'25)-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                    <div class="col-sm-2 col-md-1 col-lg-1 paper_link_container">-->
+<!--                        <div>-->
+<!--                            <a href="https://arxiv.org/abs/2408.02574" target="_blank">-->
+<!--                                <span class="paper_link arxiv">Arxiv</span>-->
+<!--                            </a>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
 
-                <div class="row paper_item">
-                    <div class="col-sm-10 col-md-11 col-lg-11">
-                        <div class="paper_title">
-                            "It Felt Like Having a Second Mind": Investigating Human-AI Co-creativity in Prewriting with Large Language Models
-                        </div>
-                        <div class="paper_text">
-                            Wan Qian, Siying Hu, <span style="font-weight: bold;">Yu Zhang</span>, Piaohong Wang, Bo Wen, Zhicong Lu
-                        </div>
-                        <div class="paper_text">
-                            The 27th ACM Conference on Computer-Supported Cooperative Work & Social Computing (CSCW'24)
-                        </div>
-                    </div>
-                    <div class="col-sm-2 col-md-1 col-lg-1 paper_link_container">
-                        <div>
-                            <a href="https://dl.acm.org/doi/abs/10.1145/3637361" target="_blank">
-                                <span class="paper_link acmdl">ACM</span>
-                            </a>
-                        </div>
-                        <div>
-                            <a href="https://arxiv.org/abs/2307.10811" target="_blank">
-                                <span class="paper_link arxiv">Arxiv</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
+<!--                <div class="row paper_item">-->
+<!--                    <div class="col-sm-10 col-md-11 col-lg-11">-->
+<!--                        <div class="paper_title">-->
+<!--                            Engage Wider Audience or Facilitate Quality Answers? a Mixed-methods Analysis of Questioning Strategies for Research Sensemaking on a Community Q&A Site-->
+<!--                        </div>-->
+<!--                        <div class="paper_text">-->
+<!--                            Changyang He, Yue Deng, Lu He, Qingyu Guo, <span style="font-weight: bold;">Yu Zhang</span>, Zhicong Lu, Bo Li-->
+<!--                        </div>-->
+<!--                        <div class="paper_text">-->
+<!--                            The 27th ACM Conference on Computer-Supported Cooperative Work & Social Computing (CSCW'24)-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                    <div class="col-sm-2 col-md-1 col-lg-1 paper_link_container">-->
+<!--                        <div>-->
+<!--                            <a href="https://dl.acm.org/doi/abs/10.1145/3637327" target="_blank">-->
+<!--                                <span class="paper_link acmdl">ACM</span>-->
+<!--                            </a>-->
+<!--                        </div>-->
+<!--                        <div>-->
+<!--                            <a href="https://arxiv.org/abs/2311.10975" target="_blank">-->
+<!--                                <span class="paper_link arxiv">Arxiv</span>-->
+<!--                            </a>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+
+<!--                <div class="row paper_item">-->
+<!--                    <div class="col-sm-10 col-md-11 col-lg-11">-->
+<!--                        <div class="paper_title">-->
+<!--                            "It Felt Like Having a Second Mind": Investigating Human-AI Co-creativity in Prewriting with Large Language Models-->
+<!--                        </div>-->
+<!--                        <div class="paper_text">-->
+<!--                            Wan Qian, Siying Hu, <span style="font-weight: bold;">Yu Zhang</span>, Piaohong Wang, Bo Wen, Zhicong Lu-->
+<!--                        </div>-->
+<!--                        <div class="paper_text">-->
+<!--                            The 27th ACM Conference on Computer-Supported Cooperative Work & Social Computing (CSCW'24)-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                    <div class="col-sm-2 col-md-1 col-lg-1 paper_link_container">-->
+<!--                        <div>-->
+<!--                            <a href="https://dl.acm.org/doi/abs/10.1145/3637361" target="_blank">-->
+<!--                                <span class="paper_link acmdl">ACM</span>-->
+<!--                            </a>-->
+<!--                        </div>-->
+<!--                        <div>-->
+<!--                            <a href="https://arxiv.org/abs/2307.10811" target="_blank">-->
+<!--                                <span class="paper_link arxiv">Arxiv</span>-->
+<!--                            </a>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
 
                 <div class="row paper_divider">
                     Early career
@@ -329,7 +347,7 @@
     <div class="container">
         <div class="row col-lg-10 col-md-10 col-sm-12 col-lg-offset-1 col-md-offset-1 col-sm-offset-0">
             <div class="custom_footer_message">
-                <p>Last updated on Feb 21th, 2025</p>
+                <p>Last updated: May 5th, 2025</p>
             </div>
         </div>
     </div>
