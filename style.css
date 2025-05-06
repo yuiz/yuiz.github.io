@@ -3,10 +3,6 @@
     /*display: none;*/
 }
 
-#sec_news {
-    /*display: none;*/
-}
-
 #sec_publications {
     /*display: none;*/
     margin-top: 24px;
@@ -29,7 +25,7 @@
 }
 
 .main_title_link_group a {
-    font-size: 16px;
+    font-size: 18px;
     color: #121F27;
 }
 
@@ -53,6 +49,7 @@
     display: flex;
     justify-content: right;
     align-items: center;
+    font-size: 16px;
 }
 
 .bio_content {
@@ -85,8 +82,13 @@
     display: flex;
     flex-direction: column;
     gap: 5px;
-    padding-left: 24px;
-    max-height: 160px;
+    /*padding-left: 12px;*/
+    max-height: 84px;
+    overflow-y: hidden;
+    margin-right: 6px;
+}
+
+.news_container:hover {
     overflow-y: auto;
 }
 
@@ -95,13 +97,10 @@
 }
 
 .news_date {
-    background: #121F27;
-    color: white;
     padding: 0 4px 0 4px;
-    font-weight: bold;
     font-size: 16px;
-    border-radius: 4px;
-    margin-right: 4px;
+    border-right: solid 2px gray;
+    margin-right: 6px;
     width: 85px;
     display: flex;
     justify-content: center;
@@ -119,7 +118,7 @@
 
 .paper_item {
     margin-top: 12px;
-    border-bottom: 1px solid;
+    border-bottom: 1px solid lightgray;
     padding-bottom: 5px;
     /*margin-bottom: 12px;*/
 }
@@ -135,10 +134,9 @@
 
 .paper_divider {
     padding-left: 14px;
-    font-size: 22px;
+    font-size: 20px;
     color: darkgrey;
     margin-top: 12px;
-    /*border-bottom: 1px solid blue;*/
 }
 
 .paper_img {
@@ -154,7 +152,7 @@
     margin-top: 2px;
     margin-bottom: 6px;
     border: dashed 1px darkgrey;
-    cursor: pointer;
+    /*cursor: pointer;*/
 }
 
 .paper_link_container {
@@ -167,18 +165,17 @@
     text-decoration: none;
 }
 
-
 .paper_links {
     display: flex;
     gap: 5px;
+    margin-top: 4px;
 }
-
 
 .paper_link {
     color: white;
     border-radius: 4px;
     padding: 2px 5px 2px 5px;
-    font-size: 12px;
+    font-size: 15px;
     font-family: "Roboto Thin", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: bold;
 }
@@ -201,6 +198,11 @@
 
 .pdf {
     background: #cf0000;
+}
+
+.custom_font {
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
 }
 
 
