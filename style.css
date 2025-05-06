@@ -20,8 +20,9 @@
 
 .main_title_link_group {
     display: flex;
-    padding-top: 20px;
     gap:10px;
+    padding-top: 28px;
+    padding-right: 4px;
 }
 
 .main_title_link_group a {
