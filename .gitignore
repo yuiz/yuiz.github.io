@@ -5,3 +5,43 @@
 
 .DS_Store
 ./img/.DS_Store
+
+
+# dependencies
+src/node_modules
+src/.pnp
+src/.pnp.*
+src/.yarn/*
+!src/.yarn/patches
+!src/.yarn/plugins
+!src/.yarn/releases
+!src/.yarn/versions
+
+# testing
+src/coverage
+
+# next.js
+src/.next/
+src/out/
+
+# production
+src/build
+
+# misc
+src/*.pem
+
+# debug
+src/npm-debug.log*
+src/yarn-debug.log*
+src/yarn-error.log*
+src/.pnpm-debug.log*
+
+# env files (can opt-in for committing if needed)
+src/.env*
+
+# vercel
+src/.vercel
+
+# typescript
+src/*.tsbuildinfo
+src/next-env.d.ts
