@@ -31,7 +31,13 @@ export const PersonalPage: React.FC = () => (
             {/* Left Column */}
             <div className="md:col-span-4 lg:col-span-3">
                 <div className="md:sticky md:top-24 flex flex-col items-center md:items-start text-center md:text-left">
-                    <Image src={"/_resources/self.jpg"} alt={"Avatar"} width={240} height={180} loading="eager" className="w-48 h-48 rounded-full mb-2"/>
+                    <Image src={"/self.jpg"} alt={"Avatar"}
+                           width={240}
+                           height={180}
+                           loading="eager"
+                           unoptimized={true}
+                           className="w-48 h-48 rounded-full mb-2"
+                    />
 
                     <h2 className="text-3xl font-bold text-slate-900 mb-2">{PERSONAL_DATA.name}</h2>
                     <p className="text-lg text-slate-600 font-medium mb-1">{PERSONAL_DATA.role}</p>
@@ -86,8 +92,9 @@ export const PersonalPage: React.FC = () => (
                         <a href={"https://smile.cs.cityu.edu.hk/"} target="_blank">&nbsp;Asst Prof. Jiawei MA</a>.
                     </p>
                     <p className="text-slate-700 leading-relaxed text-lg">
-                        I am working on several research projects that aim for introducing agentic AI into real-world application scenarios across various domains.
-                        Particularly, I am interested in developing agentic AI systems that are reliable, transparent, aligned with human goals, and finally create true values.
+                        Beyond research topics including social virtual reality and science communication through a human-computer interaction (HCI) perspective during my Ph.D.,
+                        I am now working on projects that aim for introducing agentic AI into real-world application scenarios across various domains.
+                        Particularly, I am interested in developing agentic AI systems that are reliable, transparent, aligned with human goals, and create true values.
                     </p>
                 </div>
 
@@ -113,31 +120,41 @@ export const PersonalPage: React.FC = () => (
                 <div className="mb-12">
                     <h3 className="text-2xl font-bold text-slate-900 mb-6 border-b border-slate-200 pb-2">Selected Publications</h3>
                     <div className="space-y-8">
-                        {PUBLICATIONS
-                            .sort((a, b) => (a.year >= b.year)? -1 : 1)
-                            .map((p, idx) => (
-                            <div key={`p_${idx}`} className="flex flex-col sm:flex-row gap-6">
-                                <div style={{position: "relative"}} className={"w-full sm:w-48 h-30 shrink-0 flex justify-center text-slate-400/50"}>
-                                    <Image src={`${p.image}`} alt={"Avatar"} fill sizes={"10vw"} unoptimized={true} className="rounded-sm"/>
-                                </div>
-                                <div>
-                                    <h4 className="text-lg font-bold text-slate-900 mb-1">{p.title}</h4>
-                                    <p className="text-slate-600 mb-1">{p.authors}</p>
-                                    <p className="text-sm text-slate-500 italic mb-3">{p.venue}, {p.year}</p>
-                                    <div className="flex gap-3">
-                                        {p.links.map((link, i) => (
-                                            <a
-                                                key={`link_${i}`}
-                                                href={link.url}
-                                                className="text-xs font-bold text-slate-900 border border-slate-600 px-2 py-0.5 rounded hover:bg-blue-600 hover:text-white transition-colors"
-                                            >
-                                                {link.label}
-                                            </a>
-                                        ))}
-                                    </div>
-                                </div>
-                            </div>
-                        ))}
+                        {
+                            PUBLICATIONS
+                                .sort((a, b) => (a.year > b.year) ? -1 : 1)
+                                .map(
+                                    (paper, idx) => (
+                                        <div key={`p_${idx}`} className="flex flex-col sm:flex-row gap-6">
+                                            <div style={{position: "relative"}}
+                                                 className={"w-full sm:w-48 h-30 shrink-0 flex justify-center text-slate-400/50"}>
+                                                <Image src={`${paper.image}`}
+                                                       alt={`figure_${idx}`}
+                                                       fill
+                                                       sizes={"10vw"}
+                                                       unoptimized={true}
+                                                       className="rounded-sm"
+                                                />
+                                            </div>
+                                            <div>
+                                                <h4 className="text-lg font-bold text-slate-900 mb-1">{paper.title}</h4>
+                                                <p className="text-slate-600 mb-1">{paper.authors}</p>
+                                                <p className="text-sm text-slate-500 italic mb-3">{paper.venue}, {paper.year}</p>
+                                                <div className="flex gap-3">
+                                                    {paper.links.map((link, i) => (
+                                                        <a
+                                                            key={`link_${i}`}
+                                                            href={link.url}
+                                                            className="text-xs font-bold text-slate-900 border border-slate-600 px-2 py-0.5 rounded hover:bg-slate-200"
+                                                        >
+                                                            {link.label}
+                                                        </a>
+                                                    ))}
+                                                </div>
+                                            </div>
+                                        </div>)
+                                )
+                        }
                     </div>
                 </div>
 

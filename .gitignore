@@ -1,11 +1,6 @@
-/react_ver/node_modules
-/react_ver/package-lock.json
-
 .idea/
 
 .DS_Store
-./img/.DS_Store
-
 
 # dependencies
 src/node_modules
