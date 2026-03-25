@@ -5,6 +5,8 @@ import {
     Mail,
     MapPin,
     ExternalLink,
+    Terminal,
+    Microscope,
 } from 'lucide-react';
 
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
@@ -59,11 +61,11 @@ export const PersonalPage: React.FC = () => (
                             <a href="https://www.linkedin.com/in/yui-zhang/" target="_blank" className="text-xl p-1 rounded-md hover:bg-slate-200 transition-colors text-slate-700">
                                 <FontAwesomeIcon icon={faLinkedin}></FontAwesomeIcon>
                             </a>
-                            <a href="https://orcid.org/0000-0002-8574-111X" target="_blank" className="text-xl p-1 rounded-md hover:bg-slate-200 transition-colors text-slate-700">
-                                <FontAwesomeIcon icon={faOrcid}></FontAwesomeIcon>
-                            </a>
                             <a href="https://github.com/yuiz" target="_blank" className="text-xl p-1 rounded-md hover:bg-slate-200 transition-colors text-slate-700">
                                 <FontAwesomeIcon icon={faGithub}></FontAwesomeIcon>
+                            </a>
+                            <a href="https://orcid.org/0000-0002-8574-111X" target="_blank" className="text-xl p-1 rounded-md hover:bg-slate-200 transition-colors text-slate-700">
+                                <FontAwesomeIcon icon={faOrcid}></FontAwesomeIcon>
                             </a>
                         </div>
                     </div>
@@ -89,7 +91,7 @@ export const PersonalPage: React.FC = () => (
                         I am Yu Zhang (张宇). Currently I am a Postdoctoral Fellow at College of Computing, City University of Hong Kong
                         under the supervision of
                         <a href={"https://www.cs.cityu.edu.hk/~jianwang/index.html"} target="_blank">&nbsp;Prof. Jianping WANG</a> and
-                        <a href={"https://smile.cs.cityu.edu.hk/"} target="_blank">&nbsp;Asst Prof. Jiawei MA</a>.
+                        <a href={"https://smile.cs.cityu.edu.hk/"} target="_blank">&nbsp;Asst. Prof. Jiawei MA</a>.
                     </p>
                     <p className="text-slate-700 leading-relaxed text-lg">
                         Beyond research topics including social virtual reality and science communication through a human-computer interaction (HCI) perspective during my Ph.D.,
@@ -155,6 +157,33 @@ export const PersonalPage: React.FC = () => (
                                         </div>)
                                 )
                         }
+                    </div>
+                </div>
+
+                <div className="mb-12">
+                    <h3 className="text-2xl font-bold text-slate-900 mb-6 border-b border-slate-200 pb-2">Working Experiences</h3>
+                    <div className="space-y-4">
+                        <div className="flex gap-4">
+                            <div className="mt-1 text-slate-400"><Microscope size={20} /></div>
+                            <div>
+                                <h4 className="font-bold text-slate-900">Postdoctoral Fellow</h4>
+                                <p className="text-slate-600">City University of Hong Kong, 2025 - Present</p>
+                            </div>
+                        </div>
+                        <div className="flex gap-4">
+                            <div className="mt-1 text-slate-400"><Microscope size={20} /></div>
+                            <div>
+                                <h4 className="font-bold text-slate-900">Research Intern</h4>
+                                <p className="text-slate-600">Microsoft Research Asia, 2023</p>
+                            </div>
+                        </div>
+                        <div className="flex gap-4">
+                            <div className="mt-1 text-slate-400"><Terminal size={20} /></div>
+                            <div>
+                                <h4 className="font-bold text-slate-900">Full Stack Developer & Technical Consultant</h4>
+                                <p className="text-slate-600">ThoughtWorks, 2019 - 2021</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
